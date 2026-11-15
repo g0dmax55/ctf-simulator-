@@ -1,0 +1,15 @@
+services:
+  axinor-ctf:
+    build: .
+    container_name: axinor-ctf-simulator
+    networks:
+      axinor-net:
+        ipv4_address: 172.20.0.85
+    restart: unless-stopped
+
+networks:
+  axinor-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

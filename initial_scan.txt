@@ -1,0 +1,87 @@
+# Nmap 7.99 scan initiated Sat Jun 27 01:50:49 2026 as: /usr/lib/nmap/nmap -sC -sV -p- -T4 -oN initial_scan.txt 172.20.0.85
+Nmap scan report for 172.20.0.85
+Host is up (0.0000090s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http
+|_http-title: AXINOR - Cyber Solutions Portal
+| http-robots.txt: 4 disallowed entries 
+|_/admin /dev /uploads /backup
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html
+|     Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+|     Date: Fri, 26 Jun 2026 20:20:57 GMT
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="UTF-8">
+|     <title>AXINOR - Cyber Solutions Portal</title>
+|     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3">
+|     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3">
+|     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+|     <style>
+|     :root {
+|     --bg: #070303;
+|     --primary: #ef4444;
+|     --text: #fee2e2;
+|     --card-bg: rgba(22, 11, 11, 0.7);
+|     body {
+|     background-color: var(--bg);
+|_    color: var(--text);
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.99%I=7%D=6/27%Time=6A3EDF29%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,14BB,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/html\r\nCa
+SF:che-Control:\x20no-store,\x20no-cache,\x20must-revalidate,\x20max-age=0
+SF:\r\nDate:\x20Fri,\x2026\x20Jun\x202026\x2020:20:57\x20GMT\r\nConnection
+SF::\x20close\r\n\r\n<!DOCTYPE\x20html>\n\x20\x20\x20\x20<html\x20lang=\"e
+SF:n\">\n\x20\x20\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20
+SF:charset=\"UTF-8\">\n\x20\x20\x20\x20\x20\x20\x20\x20<title>AXINOR\x20-\
+SF:x20Cyber\x20Solutions\x20Portal</title>\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20<link\x20rel=\"shortcut\x20icon\"\x20type=\"image/x-icon\"\x20href=\"
+SF:/favicon\.ico\?v=3\">\n\x20\x20\x20\x20\x20\x20\x20\x20<link\x20rel=\"i
+SF:con\"\x20type=\"image/x-icon\"\x20href=\"/favicon\.ico\?v=3\">\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20<link\x20href=\"https://fonts\.googleapis\.com
+SF:/css2\?family=Chakra\+Petch:wght@500;700;900&family=Inter:wght@400;600&
+SF:display=swap\"\x20rel=\"stylesheet\">\n\x20\x20\x20\x20\x20\x20\x20\x20
+SF:<style>\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20:root\x20{\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--bg:\x20
+SF:#070303;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20--primary:\x20#ef4444;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20--text:\x20#fee2e2;\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20--card-bg:\x20rgba\(22,\x2011,\x2011,
+SF:\x200\.7\);\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var\(
+SF:--bg\);\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20color:\x20var\(--text\);\n\x20\x20\x20\x20\x20")%r(HTTPOptions,14BB,"
+SF:HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/html\r\nCache-Control:\
+SF:x20no-store,\x20no-cache,\x20must-revalidate,\x20max-age=0\r\nDate:\x20
+SF:Fri,\x2026\x20Jun\x202026\x2020:20:57\x20GMT\r\nConnection:\x20close\r\
+SF:n\r\n<!DOCTYPE\x20html>\n\x20\x20\x20\x20<html\x20lang=\"en\">\n\x20\x2
+SF:0\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20charset=\"UTF
+SF:-8\">\n\x20\x20\x20\x20\x20\x20\x20\x20<title>AXINOR\x20-\x20Cyber\x20S
+SF:olutions\x20Portal</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<link\x20re
+SF:l=\"shortcut\x20icon\"\x20type=\"image/x-icon\"\x20href=\"/favicon\.ico
+SF:\?v=3\">\n\x20\x20\x20\x20\x20\x20\x20\x20<link\x20rel=\"icon\"\x20type
+SF:=\"image/x-icon\"\x20href=\"/favicon\.ico\?v=3\">\n\x20\x20\x20\x20\x20
+SF:\x20\x20\x20<link\x20href=\"https://fonts\.googleapis\.com/css2\?family
+SF:=Chakra\+Petch:wght@500;700;900&family=Inter:wght@400;600&display=swap\
+SF:"\x20rel=\"stylesheet\">\n\x20\x20\x20\x20\x20\x20\x20\x20<style>\n\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20:root\x20{\n\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--bg:\x20#070303;\n\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--primary:
+SF:\x20#ef4444;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20--text:\x20#fee2e2;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20--card-bg:\x20rgba\(22,\x2011,\x2011,\x200\.7\);\n
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var\(--bg\);\n\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20v
+SF:ar\(--text\);\n\x20\x20\x20\x20\x20");
+MAC Address: 22:FE:13:D0:30:B1 (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 27 01:51:02 2026 -- 1 IP address (1 host up) scanned in 13.67 seconds
